@@ -4,10 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#1C85E8",
+        "primary": "#B33766",
         "secondary": {
-          dark: "#020202",
-          grey: "#grey",
+          dark: "#171719",
+          grey: "#F5F4F4",
+          greyDark: "#282227",
+          lightgreyDark:"#3C3C43",
+          blue:"#EAEAFA",
+          pink:"#FCE7F3",
+          back:"#EADFE3",
+          backDark:"#1C171A"
         }
       },
       fontFamily: {
@@ -15,7 +21,7 @@ module.exports = {
       },
       fontSize: {
         "xs": "1rem",
-        "sm": "1.5rem",
+        "sm": "1.2rem",
         "xl": "3rem",
       },
       spacing: {
@@ -36,4 +42,5 @@ module.exports = {
 
 
   plugins: [],
+  darkMode: "class",
 }

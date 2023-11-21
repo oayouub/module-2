@@ -6,53 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/module-2/dist/output.css" rel="stylesheet">
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 </head>
 
 <body>
-  <!--navbar-->
-  <div class="flex justify-between py-5 px-5">
-    <div class="flex justify-center items-center">
-      <iconify-icon icon="iconamoon:menu-burger-horizontal-fill" style="color: gray;"></iconify-icon>
-      <h3 class="text-primary text-sm font-bold">Opendoor</h3>
-    </div>
-    <ul class="flex space-x-10  text-center text-secondary-grey">
-      <li>Sell</li>
-      <li>Buy</li>
-      <li>Finance</li>
-    </ul>
-    <h4 class="text-primary">Sign In</h4>
-  </div>
+  <button id="theme-toggle" class="absolute top-3 left-3 m-5 p-2 rounded-full text-white bg-primary dark:text-slate-900 dark:bg-white">
+    Toggle theme
+  </button>
   <!--section 1-->
-  <div
-    class="px-52 py-20 h-[700px] space-y-5 flex-col border border-solid p-4 bg-blue-200 rounded-xl rounded-bl-[150px] m-8"
-    style="background-image: url(https://unsplash.com/fr/photos/foto-a-lunga-esposizione-di-una-citta-urbana-con-luci-wptXOM6JytM);">
-    <h2 class="text-xl font-bold">Sell your house in Los Angeles <br> from the comfort of your couch</h2>
-    <div class="flex justify-between h-16 bg-white w-[700px] rounded-xl">
-      <input class="w-2/3 rounded-xl" type="text">
-      <button class="bg-primary py-3 px-4 rounded-xl m-2 text-white">Get my free offer</button>
+  <div class="p-10 w-full h-full flex flex-col dark:bg-secondary-backDark bg-secondary-back items-center">
+    <div class="bg-secondary-grey dark:bg-secondary-greyDark w-128 rounded-xl flex-col shadow-xl">
+      <div class="flex justify-between pt-8 pr-8 pl-8 content-center items-center">
+        <div class="flex content-center justify-center items-center space-x-4">
+          <iconify-icon icon="mdi:calendar" class="bg-secondary-blue dark:bg-secondary-lightgreyDark p-2 rounded-full" width="30px"
+            style="color: gray;"></iconify-icon>
+          <h2 class="font-semibold text-sm dark:text-white">My Schedule</h2>
+        </div>
+        <iconify-icon icon="maki:arrow" width="30px" style="color: #b33766;"></iconify-icon>
+      </div>
+      <div class="bg-white m-5 rounded-xl border border-solid dark:bg-secondary-greyDark border-gray-200 dark:border-secondary-lightgreyDark p-1">
+        <div class="flex justify-between">
+          <div class="p-3 space-y-2 dark:text-white">
+            <h3>Tues, Jan 17 2023</h3>
+            <h3 class="font-semibold dark:text-white">Shift name</h3>
+          </div>
+          <div class="dark:text-white p-3 bg-secondary-pink dark:bg-primary rounded-full h-8 flex justify-center content-center items-center mr-2 mt-2">
+            <h3>in 45 mins</h3>
+          </div>
+        </div>
+        <div class="flex-col bg-secondary-grey dark:bg-secondary-greyDark p-3 m-2 rounded-xl border border-solid border-gray-200 dark:border-secondary-lightgreyDark p-1 space-y-3">
+          <div class="flex justify-between content-center items-center dark:text-white">
+            <h3 class="font-semibold">07:00A-03:0P</h3>
+            <iconify-icon icon="formkit:down" style="color: #b33766;" width="20px" rotate="180deg"></iconify-icon>
+          </div>
+          <div class="dark:text-white flex space-x-32">
+            <ul class="flex-col space-y-3">
+              <li>07:00 - 10:00</li>
+              <li>07:00 - 10:00</li>
+              <li>07:00 - 10:00</li>
+              <li>07:00 - 10:00</li>
+              <li>07:00 - 10:00</li>
+            </ul>
+            <ul class="flex-col space-y-3">
+              <li>Drive Thru</li>
+              <li>Drive Thru</li>
+              <li>Drive Thru</li>
+              <li>Drive Thru</li>
+              <li>Drive Thru</li>
+            </ul>
+          </div>
+          <h3 class="text-gray-500 pt-1 pb-1 dark:text-white">Shift disclaimer lorem ipsum dolor</h3>
+        </div>
+      </div>
     </div>
-    <p class="text-xs">Get a competitive cash offer from Opendoor or use our tools to sell on your own.</p>
+     <!--section 2-->
+     <div class="p-10 w-full flex flex-col dark:bg-secondary-backDark bg-secondary-back items-center">
+      <div class="bg-secondary-grey dark:bg-secondary-greyDark w-128 rounded-xl flex-col shadow-xl">
+        <div class="flex justify-between pt-8 pr-8 pl-8 content-center items-center">
+          <div class="flex content-center justify-center items-center space-x-4">
+            <iconify-icon icon="mdi:calendar" class="bg-secondary-blue dark:bg-secondary-lightgreyDark p-2 rounded-full" width="30px"
+              style="color: gray;"></iconify-icon>
+            <h2 class="font-semibold text-sm dark:text-white">My Schedule</h2>
+          </div>
+          <iconify-icon icon="maki:arrow" width="30px" style="color: #b33766;"></iconify-icon>
+        </div>
+        <div class="bg-white m-5 rounded-xl border border-solid dark:bg-secondary-greyDark border-gray-200 dark:border-secondary-lightgreyDark p-1">
+          <div class="flex justify-between">
+            <div class="p-3 space-y-2 dark:text-white">
+              <h3>Tues, Jan 17 2023</h3>
+              <h3 class="font-semibold dark:text-white">Shift name</h3>
+            </div>
+            <div class="dark:text-white p-3 bg-secondary-pink dark:bg-primary rounded-full h-8 flex justify-center content-center items-center mr-2 mt-2">
+              <h3>in 45 mins</h3>
+            </div>
+          </div>
+          <div class="flex-col bg-secondary-grey dark:bg-secondary-greyDark p-3 m-2 rounded-xl border border-solid border-gray-200 dark:border-secondary-lightgreyDark p-1 space-y-3">
+            <div class="flex justify-between content-center items-center dark:text-white">
+              <h3 class="font-semibold">07:00A-03:0P</h3>
+              <iconify-icon icon="formkit:down" width="20px" style="color: #b33766;"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
-  <!--section 2-->
-  <div>
-    <ul class="flex space-x-8 justify-between px-60 pb-56">
-      <li class="flex-col">
-        <iconify-icon icon="ep:house" width="50px"></iconify-icon>
-        <h3 class="font-semibold text-sm">Competitive cash offer</h3>
-        <p  class="text-xs text-secondary-grey">Get a free offer in 24 hours with no risk of financing fall-trough.</p>
-      </li>
-      <li class="flex-col">
-        <iconify-icon icon="ep:house" width="50px"></iconify-icon>
-        <h3 class="font-semibold text-sm">Competitive cash offer</h3>
-        <p  class="text-xs text-secondary-grey">Get a free offer in 24 hours with no risk of financing fall-trough.</p>
-      </li>
-      <li class="flex-col">
-        <iconify-icon icon="ep:house" width="50px"></iconify-icon>
-        <h3 class="font-semibold text-sm">Competitive cash offer</h3>
-        <p  class="text-xs text-secondary-grey">Get a free offer in 24 hours with no risk of financing fall-trough.</p>
-      </li>
-    </ul>
+<!--section 3-->
+<div class="p-5 w-full h-full flex flex-col dark:bg-secondary-backDark bg-secondary-back items-center">
+  <div class="bg-secondary-grey dark:bg-secondary-greyDark w-128 rounded-xl flex-col shadow-xl">
+    <div class="flex justify-between pt-8 pr-8 pl-8 content-center items-center">
+      <div class="flex content-center justify-center items-center space-x-4">
+        <iconify-icon icon="mdi:calendar" class="bg-secondary-blue dark:bg-secondary-lightgreyDark p-2 rounded-full" width="30px"
+          style="color: gray;"></iconify-icon>
+        <h2 class="font-semibold text-sm dark:text-white">My Schedule</h2>
+      </div>
+      <iconify-icon icon="maki:arrow" width="30px" style="color: #b33766;"></iconify-icon>
+    </div>
+    <div class="bg-white m-5 rounded-xl border border-solid dark:bg-secondary-greyDark border-gray-200 dark:border-secondary-lightgreyDark p-1">
+        <div class="p-3 space-y-2 dark:text-white flex justify-center content-center items-center">
+          <h3>Empty state message lorem ipsum</h3>
+        </div>
+        
+     
+    </div>
   </div>
+
+  <script>
+    const btn = document.getElementById("theme-toggle");
+    btn.addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+    });
+  </script>
 </body>
+
 </html>
